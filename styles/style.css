@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.square{
+    /* position: relative; */
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    margin: 5px;
+}
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    content: "\1F6E1";
+    font-size: 50px;
+    line-height: 100px;
+    
+    /* Posição absoluta para ajeitar uma diferença entre os quadrados na tela */
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    
+    /* Posição absoluta para ajeitar uma diferença entre os quadrados na tela */
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#restart{
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    background-color: teal;
+    font-size: 25px;
+    color: white;
+
+}
